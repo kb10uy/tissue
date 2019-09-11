@@ -67,6 +67,16 @@ class SettingController extends Controller
         return redirect()->route('setting.privacy')->with('status', 'プライバシー設定を更新しました。');
     }
 
+    public function deactivate()
+    {
+        return view('setting.deactivate');
+    }
+
+    public function destroyUser()
+    {
+        // TODO
+    }
+
     // ( ◠‿◠ )☛ここに気づいたか・・・消えてもらう ▂▅▇█▓▒░(’ω’)░▒▓█▇▅▂うわあああああああ
 //    public function password()
 //    {
